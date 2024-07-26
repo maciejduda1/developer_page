@@ -1,0 +1,18 @@
+ {
+	"nav": {
+		"home": "Strona główna",
+		"about": "O nas",
+		"contact": "Kontakt",
+		"personal": "Projekty prywatne",
+		"professional": "Projekty zawodowe"
+	},
+	"lang": {
+		"en": "Angielski",
+		"pl": "Polski"
+	},
+	"jumbo": {
+		"title": "Maciej Duda React/React Native developer",
+		"skills": "Pasja, umiejętności i ciężka praca",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad"
+	}
+}
