@@ -1,0 +1,116 @@
+<!--generate base page code-->
+<!doctype html>
+<html>
+	<head>
+		<title>Developer Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="md:container md:mx-auto bg-black">
+		<header class="text-white p-4">
+			<nav class="nav flex flex-row justify-between content-center">
+				<h1 class="text-2xl">Developer Page</h1>
+				<ul
+					class="font-bold flex flex-row justify-center content-center gap-8"
+				>
+					<li>
+						<a href="#" data-i18n="nav.home"></a>
+					</li>
+					<li>
+						<a href="#" data-i18n="nav.about"></a>
+					</li>
+					<li>
+						<a href="#" data-i18n="nav.contact"></a>
+					</li>
+					<li>
+						<a href="#" data-i18n="nav.professional"></a>
+					</li>
+					<li>
+						<a href="#" data-i18n="nav.personal"></a>
+					</li>
+					<li>
+						<button
+							value="en"
+							id="lang"
+							class="relative w-32 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+						>
+							<div
+								class="flex flex-row justify-between content-center"
+							>
+								<div id="lang-selected"></div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-4 w-4"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							</div>
+							<div
+								id="dropdown-menu"
+								class="hidden absolute w-full top-11 left-0 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+							>
+								<div
+									id="lang-en"
+									class="flex justify-between items-center py-1 border-b cursor-pointer"
+								>
+									<div
+										class="bg-country-eng bg-contain h-4 w-4"
+									></div>
+									<span
+										class="ml-2 text-center flex-1"
+										data-i18n="lang.en"
+									></span>
+								</div>
+								<div
+									id="lang-pl"
+									class="flex justify-between items-center py-1 cursor-pointer"
+								>
+									<div
+										class="bg-country-pol bg-contain h-4 w-4"
+									></div>
+									<span
+										class="ml-2 text-center flex-1"
+										data-i18n="lang.pl"
+									></span>
+								</div>
+							</div>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section
+			class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center"
+		>
+			<div class="jumbo text-white block text-center">
+				<h1 class="text-4xl" data-i18n="jumbo.title"></h1>
+				<h2 class="text-2xl text-primary" data-i18n="jumbo.skills"></h2>
+				<p class="text-lg" data-i18n="jumbo.description"></p>
+			</div>
+			<div class="flex justify-center content-center">
+				<div
+					class="hero-phone bg-clip-content bg-blend-overlay rounded-full h-80 w-80"
+				>
+					<img class="aspect-square h-80" src="./images/nexus5.svg" />
+				</div>
+			</div>
+		</section>
+		<a
+			href="https://www.flaticon.com/free-icons/poland"
+			title="poland icons"
+			>Poland icons created by Freepik - Flaticon</a
+		>
+		<a
+			href="https://www.flaticon.com/free-icons/uk-flag"
+			title="uk flag icons"
+			>Uk flag icons created by Freepik - Flaticon</a
+		>
+	</body>
+</html>

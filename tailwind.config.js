@@ -4,8 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"hero-phone": "url('/src/images/nexus5.svg')",
-				"hero-pc": "url('/src/images/monitor.svg')",
+				"hero-phone": "url('~/images/nexus5.svg')",
+				"hero-pc": "url('~/images/monitor.svg')",
+				"country-eng": "url('~/images/united-kingdom.png')",
+				"country-pol": "url('~/images/poland.png')",
 			},
 		},
 	},
