@@ -10,22 +10,22 @@
 			<nav class="nav flex flex-row justify-between content-center">
 				<h1 class="text-2xl">Developer Page</h1>
 				<ul
-					class="font-bold flex flex-row justify-center content-center gap-8"
+					class="font-bold flex flex-row justify-center content-center gap-8 lg:flex-row flex-wrap"
 				>
-					<li>
+					<li class="hover:scale-110 leading-5">
 						<a href="#" data-i18n="nav.home"></a>
 					</li>
-					<li>
+					<li class="hover:scale-110 leading-5">
 						<a href="#" data-i18n="nav.about"></a>
 					</li>
-					<li>
-						<a href="#" data-i18n="nav.contact"></a>
-					</li>
-					<li>
+					<li class="hover:scale-110 leading-5">
 						<a href="#" data-i18n="nav.professional"></a>
 					</li>
-					<li>
+					<li class="hover:scale-110 leading-5">
 						<a href="#" data-i18n="nav.personal"></a>
+					</li>
+					<li class="hover:scale-110 leading-5">
+						<a href="#" data-i18n="nav.contact"></a>
 					</li>
 					<li>
 						<button
@@ -87,7 +87,7 @@
 			</nav>
 		</header>
 		<section
-			class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center"
+			class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center mt-8"
 		>
 			<div class="jumbo text-white block text-center">
 				<h1 class="text-4xl" data-i18n="jumbo.title"></h1>
@@ -102,15 +102,203 @@
 				</div>
 			</div>
 		</section>
-		<a
-			href="https://www.flaticon.com/free-icons/poland"
-			title="poland icons"
-			>Poland icons created by Freepik - Flaticon</a
-		>
-		<a
-			href="https://www.flaticon.com/free-icons/uk-flag"
-			title="uk flag icons"
-			>Uk flag icons created by Freepik - Flaticon</a
-		>
+		<section id="about">
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center mt-8"
+			>
+				<div class="flex justify-center content-center">
+					<h1
+						class="text-4xl text-white"
+						data-i18n="about.title"
+					></h1>
+					<p
+						class="text-lg text-white"
+						data-i18n="about.description"
+					></p>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<h3
+						class="text-2xl text-white"
+						data-i18n="about.languages"
+					></h3>
+					<div class="flex items-center justify-center">
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/html-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.html"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/css-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.css"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/javascript-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.javascript"
+							>
+							</span>
+						</div>
+					</div>
+					<h3
+						class="text-2xl text-white"
+						data-i18n="about.frameworks"
+					></h3>
+					<div class="flex items-center justify-center">
+						<div class="tooltip-icon">
+							<img
+								class="aspect-square w-8 mr-2"
+								src="./images/logos/react-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white"
+								data-i18n="about.tooltip.react"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/react-native-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.reactNative"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="aspect-square w-8 mr-2"
+								src="./images/logos/typescript-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.typescript"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="aspect-square w-8 mr-2"
+								src="./images/logos/angular-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white"
+								data-i18n="about.tooltip.angular"
+							>
+							</span>
+						</div>
+					</div>
+					<h3
+						class="text-2xl text-white"
+						data-i18n="about.tools"
+					></h3>
+					<div class="flex items-center justify-center">
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/redux-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.redux"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/github-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.github"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/webpack-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.webpack"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/webrtc-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.webrtc"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon aspect-square w-8 mr-2"
+								src="./images/logos/socket-io-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.socketio"
+							>
+							</span>
+						</div>
+						<div class="tooltip-icon">
+							<img
+								class="tooltip-icon w-12"
+								src="./images/logos/nodejs-logo.svg"
+							/>
+							<span
+								class="tooltip-text text-white bg-black p-2 rounded-lg text-center border border-white w-auto"
+								data-i18n="about.tooltip.nodejs"
+							>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="professional"></section>
+		<section id="personal"></section>
+		<section id="contact"></section>
+		<footer class="text-white p-4">
+			<p class="text-center" data-i18n="footer">
+				<a
+					href="https://www.flaticon.com/free-icons/poland"
+					title="poland icons"
+				>
+					Poland icons created by Freepik - Flaticon
+				</a>
+				<a
+					href="https://www.flaticon.com/free-icons/uk-flag"
+					title="uk flag icons"
+				>
+					Uk flag icons created by Freepik - Flaticon
+				</a>
+			</p>
+		</footer>
 	</body>
 </html>

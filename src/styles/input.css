@@ -15,3 +15,17 @@ body {
         color: rgb(9,121,112);
     }
 }
+
+.tooltip-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    @apply invisible absolute;
+}
+
+.tooltip-icon:hover .tooltip-text {
+    /*display: block;*/
+    @apply visible z-50 bottom-8;
+}

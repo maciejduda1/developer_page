@@ -14,5 +14,31 @@
 		"title": "Maciej Duda React/React Native developer",
 		"skills": "Passion, skills and hard work",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad"
+	},
+	"about": {
+		"title": "About me",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad",
+		"languages": "Programming Languages",
+		"tools": "Tools",
+		"frameworks": "Frameworks",
+		"tooltip": {
+			"react": "React",
+			"reactNative": "React Native",
+			"redux": "Redux",
+			"nodejs": "Node.js",
+			"express": "Express.js",
+			"typescript": "TypeScript",
+			"javascript": "JavaScript",
+			"html": "HTML",
+			"css": "CSS",
+			"github": "Github",
+			"npm": "NPM",
+			"yarn": "Yarn",
+			"webpack": "Webpack",
+			"babel": "Babel",
+			"angular": "Angular",
+			"socketio": "Socket.io",
+			"webrtc": "WebRTC"
+		}
 	}
 }

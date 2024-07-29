@@ -25,11 +25,11 @@ const localize = locI18next.init(i18next, {
 	parseDefaultValueFromContent: true,
 	document: window.document,
 });
-localizeText();
 
 function localizeText() {
 	localize(".nav");
 	localize(".jumbo");
+	localize("#about");
 }
 
 const button = document.querySelector("#lang");
@@ -51,7 +51,6 @@ langPl.addEventListener("click", () => {
 	changeButtonLanguage("pl");
 	changeLanguage("pl");
 	selectedValue = "pl";
-	console.log("switched to pl");
 });
 
 langEn.addEventListener("click", () => {
@@ -61,11 +60,9 @@ langEn.addEventListener("click", () => {
 	changeButtonLanguage("en");
 	changeLanguage("en");
 	selectedValue = "en";
-	console.log("switched to en");
 });
 
 document.addEventListener("click", (e) => {
-	console.log(dropMenu.contains(e.target) && !button.contains(e.target));
 	if (!dropMenu.contains(e.target) && !button.contains(e.target)) {
 		!dropMenu.classList.contains("hidden") &&
 			dropMenu.classList.add("hidden");
@@ -91,3 +88,4 @@ function changeButtonLanguage(language) {
 								</div>`;
 }
 changeButtonLanguage(selectedValue);
+localizeText();
