@@ -13,11 +13,11 @@
 	"jumbo": {
 		"title": "Maciej Duda React/React Native developer",
 		"skills": "Passion, skills and hard work",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad"
+		"description": "Welcome. If you want to know me better check my projects and skills"
 	},
 	"about": {
 		"title": "About me",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad",
+		"content": "I am a frontend developer with over 5 years of experience. I have worked on both web applications (using React) and mobile applications (using React Native). Often, I was responsible for defining the frontend architecture and coordinating the work of other frontend developers on the team. My main task was to deliver key solutions that determined the project's success.",
 		"languages": "Programming Languages",
 		"tools": "Tools",
 		"frameworks": "Frameworks",
@@ -40,5 +40,83 @@
 			"socketio": "Socket.io",
 			"webrtc": "WebRTC"
 		}
+	},
+	"professional": {
+		"title": "Career",
+		"companyName": {
+			"remedizer": "Remedizer Sp. z o.o.",
+			"solvee": "Solvee Sp. z o.o.",
+			"autorun": "Autorun Sp. z o.o."
+		},
+		"content": {
+			"autorun": {
+				"position": "Trainee and Junior Frontend Developer",
+				"date": "08.2018 - 02.2019",
+				"description": "I was building websites from sketch designs."
+			},
+			"remedizer": {
+				"position": "React Developer",
+				"date": "07.2019 - 03.2020",
+				"description": "I was building an application that facilitates medical consultations between a patient and a doctor. I created a React front application based on Material-Ui. The application contained graphs and numerous multi-step forms."
+			},
+			"solvee": {
+				"position": "Mid React Developer",
+				"date": "9.2020 - 2.2024",
+				"description": "I was building advanced web and mobile apps for multiple clients. I was responsible for defining the frontend architecture and coordinating the work of other frontend developers on the team. My main task was to deliver key solutions that determined the project's success.",
+				"projects": {
+					"tech": "Technologies",
+					"project": "Example projects",
+					"description": "Description",
+					"project1": {
+						"name": "Form application",
+						"description": "I co-created a set of web applications for creating and managing forms. I built a system that allows you to connect forms in subsequent steps, enter your own formulas that automatically calculate the values of fields, or a system that controls the layout of fields in the form."
+					},
+					"project2": {
+						"name": "Training application",
+						"description": "Zestaw aplikacji, z których jedna pozwala na tworzenie planów treningowych, a druga na ich realizację. W aplikacji można dodawać ćwiczenia, tworzyć plany treningowe, a także zapisywać postępy. Budowałem połączenie pomiędzy planami a kalendarzem, grafami pokazującymi postępy oraz systemem wypełniania planów treningowych."
+					},
+					"project3": {
+						"name": "Chat webRTC",
+						"description": "Zbudowałem moduł czatu webRTC od zera. Następnie opublikowałem go jako prywatny package w npm. Czat pozwala na przesyłanie plików i wiadomości tekstowych pomiędzy użytkownikami, na zapisywanie historii rozmów. Czat posiada zarówno wersję web jak i mobilną (React Native). Można zarówno używać zapisanego w paczce UI jak i dodać własne."
+					},
+					"project4": {
+						"name": "Yacht booking application",
+						"description": "Tworzyłem zestaw aplikacji do zarządzania jachtami. Na podstawie layoutu Figma, zbudowałem trzy aplikacje mobilne (React Native). Aplikacje obsługiwały min. mapy i notyfikacje oraz customowe animacje."
+					},
+					"project5": {
+						"name": "Marina management application",
+						"description": "Na podstawie layoutu Figma, zbudowałem aplikację mobilną obsługującą tyczenie tras, rezerwacje, płatności (Stripe) i wiele innych funkcjonalności."
+					},
+					"project6": {
+						"name": "Courier application",
+						"description": "Budowałem zestaw aplikacji mobilnych oraz webowych do obsługi kurierów, zarówno od strony klienta jak i pracownika. Ponad to co obsługiwały wyżej wymienione aplikacje tu dodatkowo pojawiła się kontrola gps oraz server side events. Aplikacje były zbudowane w React Native (Expo) oraz React."
+					}
+				}
+			}
+		}
+	},
+	"tech": {
+		"react": "React",
+		"reactNative": "React Native",
+		"redux": "Redux",
+		"nodejs": "Node.js",
+		"express": "Express.js",
+		"typescript": "TypeScript",
+		"javascript": "JavaScript",
+		"html": "HTML",
+		"css": "CSS",
+		"github": "Github",
+		"npm": "NPM",
+		"yarn": "Yarn",
+		"webpack": "Webpack",
+		"babel": "Babel",
+		"angular": "Angular",
+		"socketio": "Socket.io",
+		"webrtc": "WebRTC",
+		"sass": "Sass",
+		"bootstrap": "Bootstrap",
+		"styledComponents": "Styled Components",
+		"materialUi": "Material UI",
+		"recharts": "Recharts"
 	}
 }

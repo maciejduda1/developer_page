@@ -13,6 +13,109 @@
 	"jumbo": {
 		"title": "Maciej Duda React/React Native developer",
 		"skills": "Pasja, umiejętności i ciężka praca",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odioasdad"
-	}
-}
+		"description": "Witam na mojej stronie. Zapraszam do zapoznania się z moimi projektami i umiejętnościami"
+	},
+	 "about": {
+		 "title": "O mnie",
+		 "content": "Jestem frontend developerem z ponad 5-letnim doświadczeniem. Tworzyłem zarówno aplikacje webowe (React), jak i mobilne (React Native). Często w projektach samodzielnie decydowałem o wyglądzie architektury frontendu i koordynowałem pracę pozostałych frontend developerów w zespole. Moim głównym zadaniem było dostarczanie krytycznych rozwiązań, decydujących o wykonalności projektu.",
+		 "languages": "Języki programowania",
+		 "tools": "Narzędzia",
+		 "frameworks": "Frameworki",
+		 "tooltip": {
+			 "react": "React",
+			 "reactNative": "React Native",
+			 "redux": "Redux",
+			 "nodejs": "Node.js",
+			 "express": "Express.js",
+			 "typescript": "TypeScript",
+			 "javascript": "JavaScript",
+			 "html": "HTML",
+			 "css": "CSS",
+			 "github": "Github",
+			 "npm": "NPM",
+			 "yarn": "Yarn",
+			 "webpack": "Webpack",
+			 "babel": "Babel",
+			 "angular": "Angular",
+			 "socketio": "Socket.io",
+			 "webrtc": "WebRTC"
+		 }
+	 },
+	 "professional": {
+		 "title": "Kariera",
+		 "companyName": {
+			 "remedizer": "Remedizer Sp. z o.o.",
+			 "solvee": "Solvee Sp. z o.o.",
+			 "autorun": "Autorun Sp. z o.o."
+		 },
+		 "content": {
+			 "autorun": {
+				 "position": "Stażysta i Junior Frontend Developer",
+				 "date": "8.2018 - 2.2019",
+				 "description": "Tworzyłem strony internetowe na podstawie projektów graficznych (Sketch). Uczyłem się korzystać z Angulara tworząc projekty wewnętrzne oraz pomagając w drobnych zadaniach w dużej aplikacji z branży motoryzacyjnej."
+			 },
+			 "remedizer": {
+				 "position": "React Developer",
+				 "date": "7.2019 - 3.2020",
+				 "description": "Budowałem aplikację ułatwiającą konsultacje medyczne pomiędzy pacjentem a lekarzem. Wychodząc od mockupu i layoutu stworzyłem w React front aplikacji oparty o Material-Ui. Aplikacja zawierała grafy oraz liczne kilkustopniowe formularze."
+			 },
+			 "solvee": {
+				 "position": "Mid React Developer",
+				 "date": "9.2020 - 2.2024",
+				 "description": "I was building advanced web and mobile apps for multiple clients. I was responsible for defining the frontend architecture and coordinating the work of other frontend developers on the team. My main task was to deliver key solutions that determined the project's success.",
+				 "projects": {
+					 "project": "Przykładowe projekty",
+					 "description": "Opis projektów",
+					 "project1": {
+						 "name": "Aplikacja do zarządzania formularzami",
+						 "description": "Współtworzyłem zestaw aplikacji webowych do tworzenia i obsługi formularzy. Zbudowałem min. system pozwalający łączyć formularze w kolejne kroki, wprowadzać własne formuły automatycznie wyliczające wartości pól, czy też system kontrolujący układ pól w formularzu."
+					 },
+					 "project2": {
+						 "name": "Aplikacja do zarządzania planami treningowymi",
+						 "description": "Zestaw aplikacji, z których jedna pozwala na tworzenie planów treningowych, a druga na ich realizację. W aplikacji można dodawać ćwiczenia, tworzyć plany treningowe, a także zapisywać postępy. Budowałem połączenie pomiędzy planami a kalendarzem, grafami pokazującymi postępy oraz systemem wypełniania planów treningowych."
+					 },
+					 "project3": {
+						 "name": "Chat webRTC",
+						 "description": "Jednoosobowo zbudowałem moduł czatu webRTC od zera. Następnie opublikowałem go jako prywatny package w npm. Czat pozwala na przesyłanie plików i wiadomości tekstowych pomiędzy użytkownikami, na zapisywanie historii rozmów. Czat posiada zarówno wersję web jak i mobilną (React Native). Można zarówno używać zapisanego w paczce UI jak i dodać własne."
+					 },
+					 "project4": {
+						 "name": "Yacht booking application",
+						 "description": "Tworzyłem zestaw aplikacji do zarządzania jachtami. Na podstawie layoutu Figma, zbudowałem trzy aplikacje mobilne (React Native). Aplikacje obsługiwały min. mapy i notyfikacje oraz customowe animacje."
+					 },
+					 "project5": {
+						 "name": "Aplikacja do zarządzania marinami",
+						 "description": "Na podstawie layoutu Figma, zbudowałem aplikację mobilną obsługującą tyczenie tras, rezerwacje, płatności (Stripe) i wiele innych funkcjonalności. Aplikacja była zbudowana w React Native."
+					 },
+					 "project6": {
+						 "name": "Courier application",
+						 "description": "Budowałem zestaw aplikacji mobilnych oraz webowych do obsługi kurierów, zarówno od strony klienta jak i pracownika. Ponad to co obsługiwały wyżej wymienione aplikacje tu dodatkowo pojawiła się kontrola gps oraz server side events. Aplikacje były zbudowane w React Native (Expo) oraz React."
+					 }
+				 }
+			 }
+		 }
+	 },
+	 "tech": {
+		 "react": "React",
+		 "reactNative": "React Native",
+		 "redux": "Redux",
+		 "nodejs": "Node.js",
+		 "express": "Express.js",
+		 "typescript": "TypeScript",
+		 "javascript": "JavaScript",
+		 "html": "HTML",
+		 "css": "CSS",
+		 "github": "Github",
+		 "npm": "NPM",
+		 "yarn": "Yarn",
+		 "webpack": "Webpack",
+		 "babel": "Babel",
+		 "angular": "Angular",
+		 "socketio": "Socket.io",
+		 "webrtc": "WebRTC",
+		 "sass": "Sass",
+		 "bootstrap": "Bootstrap",
+		 "styledComponents": "Styled Components",
+		 "materialUi": "Material UI",
+		 "recharts": "Recharts"
+	 }
+ }

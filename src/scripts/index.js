@@ -30,6 +30,7 @@ function localizeText() {
 	localize(".nav");
 	localize(".jumbo");
 	localize("#about");
+	localize("#professional");
 }
 
 const button = document.querySelector("#lang");
