@@ -95,6 +95,9 @@
 			}
 		}
 	},
+	"personal": {
+		"title": "Personal projects"
+	},
 	"tech": {
 		"react": "React",
 		"reactNative": "React Native",

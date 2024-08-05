@@ -27,10 +27,11 @@ const localize = locI18next.init(i18next, {
 });
 
 function localizeText() {
-	localize(".nav");
+	localize("nav");
 	localize(".jumbo");
 	localize("#about");
 	localize("#professional");
+	localize("#personal");
 }
 
 const button = document.querySelector("#lang");
