@@ -4,10 +4,10 @@
 		<title>Developer Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
-	<body class="md:container md:mx-auto flex flex-col">
+	<body class="flex flex-col bg-white">
 		<header class="mb-8 p-4">
 			<nav
-				class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+				class="bg-cyan-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200"
 			>
 				<div
 					class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -35,7 +35,7 @@
 					>
 						<div
 							id="lang"
-							class="relative w-32 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+							class="relative w-32 bg-cyan-800 border border-cyan-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
 						>
 							<div
 								class="flex flex-row justify-between content-center"
@@ -116,7 +116,7 @@
 						id="navbar-sticky"
 					>
 						<ul
-							class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+							class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
 						>
 							<li>
 								<a
@@ -158,251 +158,390 @@
 				</div>
 			</nav>
 		</header>
-		<section
-			class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center mt-8"
-		>
-			<div class="jumbo flex flex-col justify-center items-center">
-				<h1 class="text-4xl mb-2" data-i18n="jumbo.title"></h1>
-				<h2
-					class="text-2xl text-primary mb-4"
-					data-i18n="jumbo.skills"
-				></h2>
-				<p class="text-lg" data-i18n="jumbo.description"></p>
-			</div>
-			<div class="relative flex justify-center content-center">
-				<img
-					alt="phone image"
-					class="absolute left-5 aspect-square h-80"
-					src="./images/jumbo.svg"
-				/>
-				<img
-					class="aspect-square w-8 absolute top-12 left-8"
-					src="./images/logos/react-logo.svg"
-					alt="React logo"
-				/>
-				<img
-					class="aspect-square w-8 absolute top-20 left-8"
-					src="./images/logos/sass-logo.svg"
-					alt="Sass logo"
-				/>
-				<img
-					class="aspect-square w-8 absolute top-32 left-8"
-					src="./images/logos/html-logo.svg"
-					alt="HTML logo"
-				/>
-				<img
-					class="aspect-square w-8 absolute top-44 left-8"
-					src="./images/logos/typescript-logo.svg"
-					alt="Typescript logo"
-				/>
-				<div class="absolute top-0 right-5 h-80">
+		<section class="container mx-auto my-40">
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center"
+			>
+				<div class="jumbo flex flex-col justify-center items-center">
+					<h1 class="text-4xl mb-2" data-i18n="jumbo.title"></h1>
+					<h2
+						class="text-2xl text-primary mb-4"
+						data-i18n="jumbo.skills"
+					></h2>
+					<p class="text-lg" data-i18n="jumbo.description"></p>
+				</div>
+				<div class="relative flex justify-center content-center">
 					<img
 						alt="phone image"
-						class="aspect-square h-80"
-						src="./images/nexus5.svg"
+						class="absolute left-5 aspect-square h-80"
+						src="./images/jumbo.svg"
 					/>
 					<img
-						class="aspect-square h-20 absolute top-32 right-[120px]"
-						src="./images/logos/react-native-logo.svg"
-						alt="React Native logo"
+						class="aspect-square w-8 absolute top-12 left-8"
+						src="./images/logos/react-logo.svg"
+						alt="React logo"
 					/>
+					<img
+						class="aspect-square w-8 absolute top-20 left-8"
+						src="./images/logos/sass-logo.svg"
+						alt="Sass logo"
+					/>
+					<img
+						class="aspect-square w-8 absolute top-32 left-8"
+						src="./images/logos/html-logo.svg"
+						alt="HTML logo"
+					/>
+					<img
+						class="aspect-square w-8 absolute top-44 left-8"
+						src="./images/logos/typescript-logo.svg"
+						alt="Typescript logo"
+					/>
+					<div class="absolute top-0 right-5 h-80">
+						<img
+							alt="phone image"
+							class="aspect-square h-80"
+							src="./images/nexus5.svg"
+						/>
+						<img
+							class="aspect-square h-20 absolute top-32 right-[120px]"
+							src="./images/logos/react-native-logo.svg"
+							alt="React Native logo"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="about" class="mt-40 md:mt-8">
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center mt-8"
-			>
+		<section id="about" class="py-20 container mx-auto">
+			<div class="flex flex-col justify-center items-center mt-8">
 				<div
-					class="flex justify-center content-center flex-col md:flex-row"
+					class="flex justify-between items-center gap-4 flex-col md:flex-row"
 				>
-					<h1
-						class="text-4xl mr-8 text-center md:text-left"
-						data-i18n="about.title"
-					></h1>
-					<p
-						class="text-lg text-justify"
-						data-i18n="about.content"
-					></p>
-				</div>
-				<div class="flex flex-col items-center">
-					<h3 class="text-lg my-4" data-i18n="about.languages"></h3>
-					<div class="flex items-center justify-center">
-						<div class="tooltip-icon">
-							<img
-								alt="html5 logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/html-logo.svg"
-							/>
+					<img
+						class="rounded-full w-40 broder border-2 border-cyan-800"
+						src="images/photo.jpg"
+						alt="Profile photo in painting style"
+					/>
+					<div>
+						<h1
+							class="text-3xl text-center font-bold"
+							data-i18n="about.title"
+						></h1>
+						<p
+							class="text-lg text-center"
+							data-i18n="about.content"
+						></p>
+						<div
+							class="flex flex-col justify-center items-center flex-wrap mt-4"
+						>
+							<h1
+								class="text-2xl text-center font-bold"
+								data-i18n="about.skills"
+							></h1>
 							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.html"
+								class="text-lg text-center mb-6"
+								data-i18n="about.skillsDescription"
+							></span>
+							<div
+								class="flex items-center justify-center flex-wrap"
 							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="css logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/css-logo.svg"
-							/>
-							<span
-								class="tooltip-text p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.css"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="javascript logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/javascript-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.javascript"
-							>
-							</span>
-						</div>
-					</div>
-					<h3 class="text-lg my-4" data-i18n="about.frameworks"></h3>
-					<div class="flex items-center justify-center">
-						<div class="tooltip-icon">
-							<img
-								alt="react logo"
-								class="aspect-square w-8 mr-2"
-								src="./images/logos/react-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white"
-								data-i18n="about.tooltip.react"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="react native logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/react-native-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.reactNative"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="typescript logo"
-								class="aspect-square w-8 mr-2"
-								src="./images/logos/typescript-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.typescript"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="angular logo"
-								class="aspect-square w-8 mr-2"
-								src="./images/logos/angular-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white"
-								data-i18n="about.tooltip.angular"
-							>
-							</span>
-						</div>
-					</div>
-					<h3 class="text-lg my-4" data-i18n="about.tools"></h3>
-					<div class="flex items-center justify-center">
-						<div class="tooltip-icon">
-							<img
-								alt="redux logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/redux-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.redux"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="github logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/github-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.github"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="webpack logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/webpack-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.webpack"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="webrtc logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/webrtc-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.webrtc"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="socket.io logo"
-								class="tooltip-icon aspect-square w-8 mr-2"
-								src="./images/logos/socket-io-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.socketio"
-							>
-							</span>
-						</div>
-						<div class="tooltip-icon">
-							<img
-								alt="node.js logo"
-								class="tooltip-icon w-12"
-								src="./images/logos/nodejs-logo.svg"
-							/>
-							<span
-								class="tooltip-text bg-black p-2 rounded-lg text-center border border-white w-auto"
-								data-i18n="about.tooltip.nodejs"
-							>
-							</span>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center m-2"
+								>
+									<img
+										alt="html5 logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/html-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.html"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="css logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/css-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.css"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<img
+										alt="javascript logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/javascript-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.javascript"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="css logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/sass-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.sass"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="react logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/react-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white font-bold"
+										data-i18n="tech.react"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="react native logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/react-native-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold text-nowrap"
+										data-i18n="tech.reactNative"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="typescript logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/typescript-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.typescript"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="angular logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/angular-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white font-bold"
+										data-i18n="tech.angular"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="redux logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/redux-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.redux"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="github logo"
+										class="tooltip-icon aspect-square w-5 mr-2"
+										src="./images/logos/github-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.github"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="webpack logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/webpack-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.webpack"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="webrtc logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/webrtc-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.webrtc"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center"
+								>
+									<img
+										alt="socket.io logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/socket-io-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.socketio"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center"
+								>
+									<img
+										alt="node.js logo"
+										class="w-8 mr-2"
+										src="./images/logos/nodejs-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.nodejs"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.recharts"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold text-nowrap"
+										data-i18n="tech.materialUi"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.reanimated"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<img
+										alt="html5 logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/expo-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.expo"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.express"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.stripe"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
+								>
+									<img
+										alt="firebase logo"
+										class="aspect-square w-5 mr-2"
+										src="./images/logos/firebase-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.firebase"
+									>
+									</span>
+								</div>
+								<div
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center"
+								>
+									<img
+										alt="node.js logo"
+										class="w-8 mr-2"
+										src="./images/logos/babel-logo.svg"
+									/>
+									<span
+										class="rounded-lg text-center border border-white w-auto font-bold"
+										data-i18n="tech.babel"
+									>
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="professional">
+		<section class="py-20 bg-cyan-50" id="professional">
 			<div
-				class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-center mt-8"
+				class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 justify-center"
 			>
 				<h1
-					class="text-4xl mr-8 text-center md:text-left"
+					class="text-3xl md:mr-8 text-center"
 					data-i18n="professional.title"
 				></h1>
-				<div class="col-span-2">
+				<div class="col-span-2 text-center">
 					<div>
 						<h1
 							class="text-2xl text-primary"
@@ -417,10 +556,10 @@
 							data-i18n="professional.content.autorun.date"
 						></p>
 						<p
-							class="text-lg text-justify"
+							class="text-lg text-center md:text-justify"
 							data-i18n="professional.content.autorun.description"
 						></p>
-						<div class="flex mt-2">
+						<div class="flex mt-2 justify-center md:justify-start">
 							<div
 								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
 							>
@@ -453,10 +592,10 @@
 							data-i18n="professional.content.remedizer.date"
 						></p>
 						<p
-							class="text-lg text-justify"
+							class="text-lg justify-center md:text-justify"
 							data-i18n="professional.content.remedizer.description"
 						></p>
-						<div class="flex mt-2">
+						<div class="flex mt-2 justify-center md:justify-start">
 							<div
 								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
 							>
@@ -499,10 +638,12 @@
 							data-i18n="professional.content.solvee.date"
 						></p>
 						<p
-							class="text-lg text-justify"
+							class="text-lg justify-center md:justify-start"
 							data-i18n="professional.content.solvee.description"
 						></p>
-						<div class="relative overflow-x-auto rounded-2xl">
+						<div
+							class="relative overflow-x-auto rounded-2xl mx-auto flex justify-center"
+						>
 							<table
 								class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
 							>
@@ -604,7 +745,9 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="flex mt-2 flex-wrap">
+						<div
+							class="flex mt-2 flex-wrap justify-center md:justify-start"
+						>
 							<div
 								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
 							>

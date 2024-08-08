@@ -18,28 +18,8 @@
 	"about": {
 		"title": "About me",
 		"content": "I am a frontend developer with over 5 years of experience. I have worked on both web applications (using React) and mobile applications (using React Native). Often, I was responsible for defining the frontend architecture and coordinating the work of other frontend developers on the team. My main task was to deliver key solutions that determined the project's success.",
-		"languages": "Programming Languages",
-		"tools": "Tools",
-		"frameworks": "Frameworks",
-		"tooltip": {
-			"react": "React",
-			"reactNative": "React Native",
-			"redux": "Redux",
-			"nodejs": "Node.js",
-			"express": "Express.js",
-			"typescript": "TypeScript",
-			"javascript": "JavaScript",
-			"html": "HTML",
-			"css": "CSS",
-			"github": "Github",
-			"npm": "NPM",
-			"yarn": "Yarn",
-			"webpack": "Webpack",
-			"babel": "Babel",
-			"angular": "Angular",
-			"socketio": "Socket.io",
-			"webrtc": "WebRTC"
-		}
+		"skills": "Programming skills and tools",
+		"skillsDescription": "I have experience in building web and mobile applications using the following technologies:"
 	},
 	"professional": {
 		"title": "Career",
@@ -120,6 +100,10 @@
 		"bootstrap": "Bootstrap",
 		"styledComponents": "Styled Components",
 		"materialUi": "Material UI",
-		"recharts": "Recharts"
+		"recharts": "Recharts",
+		"expo": "Expo",
+		"reanimated": "Reanimated",
+		"firebase": "Firebase",
+		"stripe": "Stripe"
 	}
 }
