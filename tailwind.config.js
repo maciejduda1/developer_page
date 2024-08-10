@@ -3,6 +3,11 @@ module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				montserrat: ["Montserrat", "sans-serif"],
+				lora: ["Lora", "serif"],
+				caveat: ["Caveat", "cursive"],
+			},
 			colors: {
 				primary: "#070F2B",
 				secondary: "#1B1A55",
@@ -11,8 +16,8 @@ module.exports = {
 			backgroundImage: {
 				"hero-phone": "url('~/images/nexus5.svg')",
 				"hero-pc": "url('~/images/monitor.svg')",
-				"country-eng": "url('~/images/united-kingdom.png')",
-				"country-pol": "url('~/images/poland.png')",
+				"country-eng": "url('~/images/united-kingdom-flag.svg')",
+				"country-pol": "url('~/images/poland-flag.svg')",
 			},
 		},
 	},

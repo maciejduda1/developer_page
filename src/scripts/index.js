@@ -85,8 +85,8 @@ function changeLanguage(language) {
 function changeButtonLanguage(language) {
 	const image = language === "pl" ? "pol" : "eng";
 	langSelected.innerHTML = `<div class="flex justify-between items-center">
-									<div class="bg-country-${image} bg-contain h-4 w-4"></div>
-									<span class="ml-2 text-center flex-1" data-i18n="lang.${language}"></span>
+									<div class="bg-country-${image} bg-contain bg-no-repeat h-4 w-4"></div>
+									<span class="ml-2 text-center flex-1 text-white font-bold" data-i18n="lang.${language}"></span>
 								</div>`;
 }
 changeButtonLanguage(selectedValue);

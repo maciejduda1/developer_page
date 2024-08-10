@@ -3,11 +3,17 @@
 	<head>
 		<title>Developer Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="flex flex-col bg-white">
-		<header class="mb-8 p-4">
+	<body class="flex flex-col bg-white font-montserrat">
+		<header class="mb-8 p-4 font-lora">
 			<nav
-				class="bg-cyan-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200"
+				class="bg-cyan-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200"
 			>
 				<div
 					class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -26,7 +32,7 @@
 						<!--							alt="React Native Logo"-->
 						<!--						/>-->
 						<span
-							class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+							class="self-center text-2xl font-semibold whitespace-nowrap text-white"
 							>Maciej Duda</span
 						>
 					</div>
@@ -58,11 +64,11 @@
 							</div>
 							<div
 								id="dropdown-menu"
-								class="hidden absolute w-full top-11 left-0 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+								class="hidden absolute w-full top-11 left-0 bg-cyan-50 border border-cyan-100 text-black text-sm rounded-lg"
 							>
 								<div
 									id="lang-en"
-									class="flex justify-between items-center py-1 border-b cursor-pointer"
+									class="flex justify-between items-center p-3 border-b cursor-pointer"
 								>
 									<div
 										class="bg-country-eng bg-contain h-4 w-4"
@@ -74,10 +80,10 @@
 								</div>
 								<div
 									id="lang-pl"
-									class="flex justify-between items-center py-1 cursor-pointer"
+									class="flex justify-between items-center p-3 cursor-pointer"
 								>
 									<div
-										class="bg-country-pol bg-contain h-4 w-4"
+										class="bg-country-pol bg-contain bg-no-repeat h-4 w-4"
 									></div>
 									<span
 										class="ml-2 text-center flex-1"
@@ -120,36 +126,36 @@
 						>
 							<li>
 								<a
-									href="#"
-									class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									href="#home"
+									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"
 									data-i18n="nav.home"
 								></a>
 							</li>
 							<li>
 								<a
-									href="#"
-									class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									href="#about"
+									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"
 									data-i18n="nav.about"
 								></a>
 							</li>
 							<li>
 								<a
-									href="#"
-									class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									href="#professional"
+									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"
 									data-i18n="nav.professional"
 								></a>
 							</li>
+							<!--							<li>-->
+							<!--								<a-->
+							<!--									href="#"-->
+							<!--									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"-->
+							<!--									data-i18n="nav.personal"-->
+							<!--								></a>-->
+							<!--							</li>-->
 							<li>
 								<a
 									href="#"
-									class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-									data-i18n="nav.personal"
-								></a>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"
 									data-i18n="nav.contact"
 								></a>
 							</li>
@@ -158,9 +164,9 @@
 				</div>
 			</nav>
 		</header>
-		<section class="container mx-auto my-40">
+		<section id="home" class="container mx-auto my-40">
 			<div
-				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center"
+				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center font-caveat"
 			>
 				<div class="jumbo flex flex-col justify-center items-center">
 					<h1 class="text-4xl mb-2" data-i18n="jumbo.title"></h1>
@@ -242,7 +248,7 @@
 								data-i18n="about.skillsDescription"
 							></span>
 							<div
-								class="flex items-center justify-center flex-wrap"
+								class="flex items-center justify-center flex-wrap font-caveat"
 							>
 								<div
 									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 mr-2 justify-center items-center m-2"
@@ -533,279 +539,282 @@
 				</div>
 			</div>
 		</section>
-		<section class="py-20 bg-cyan-50" id="professional">
+		<section class="py-20" id="professional">
+			<h1
+				class="text-3xl md:mr-8 text-center font-bold"
+				data-i18n="professional.title"
+			></h1>
 			<div
 				class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 justify-center"
 			>
-				<h1
-					class="text-3xl md:mr-8 text-center"
-					data-i18n="professional.title"
-				></h1>
-				<div class="col-span-2 text-center">
-					<div>
-						<h1
-							class="text-2xl text-primary"
-							data-i18n="professional.content.autorun.position"
-						></h1>
-						<h2
-							class="text-xl my-1"
-							data-i18n="professional.companyName.autorun"
-						></h2>
-						<p
-							class="text-xl"
-							data-i18n="professional.content.autorun.date"
-						></p>
-						<p
-							class="text-lg text-center md:text-justify"
-							data-i18n="professional.content.autorun.description"
-						></p>
-						<div class="flex mt-2 justify-center md:justify-start">
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.angular"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.html"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.sass"></span>
-							</div>
-						</div>
-					</div>
-					<hr class="my-4" />
-					<div>
-						<h1
-							class="text-2xl text-primary"
-							data-i18n="professional.content.remedizer.position"
-						></h1>
-						<h2
-							class="text-xl my-1"
-							data-i18n="professional.companyName.remedizer"
-						></h2>
-						<p
-							class="text-xl"
-							data-i18n="professional.content.remedizer.date"
-						></p>
-						<p
-							class="text-lg justify-center md:text-justify"
-							data-i18n="professional.content.remedizer.description"
-						></p>
-						<div class="flex mt-2 justify-center md:justify-start">
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.react"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.html"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.sass"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.materialUi"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2"
-							>
-								<span data-i18n="tech.recharts"></span>
-							</div>
-						</div>
-					</div>
-					<hr class="my-4" />
-					<div>
-						<h1
-							class="text-2xl text-primary"
-							data-i18n="professional.content.solvee.position"
-						></h1>
-						<h2
-							class="text-xl my-1"
-							data-i18n="professional.companyName.solvee"
-						></h2>
-						<p
-							class="text-xl"
-							data-i18n="professional.content.solvee.date"
-						></p>
-						<p
-							class="text-lg justify-center md:justify-start"
-							data-i18n="professional.content.solvee.description"
-						></p>
+				<div class="col-span-1 font-caveat">
+					<h1
+						class="text-2xl text-primary font-bold"
+						data-i18n="professional.content.autorun.position"
+					></h1>
+					<h2
+						class="text-xl my-1"
+						data-i18n="professional.companyName.autorun"
+					></h2>
+					<p
+						class="text-xl"
+						data-i18n="professional.content.autorun.date"
+					></p>
+				</div>
+				<div class="col-span-1 md:col-span-2 text-center">
+					<p
+						class="text-lg text-center md:text-justify"
+						data-i18n="professional.content.autorun.description"
+					></p>
+					<div
+						class="flex mt-2 justify-center md:justify-start font-caveat"
+					>
 						<div
-							class="relative overflow-x-auto rounded-2xl mx-auto flex justify-center"
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
 						>
-							<table
-								class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-							>
-								<thead
-									class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-								>
-									<tr>
-										<th
-											scope="col"
-											class="px-6 py-3"
-											data-i18n="professional.content.solvee.projects.project"
-										></th>
-										<th
-											scope="col"
-											class="px-6 py-3"
-											data-i18n="professional.content.solvee.projects.description"
-										></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project1.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project1.description"
-										></td>
-									</tr>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project2.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project2.description"
-										></td>
-									</tr>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project3.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project3.description"
-										></td>
-									</tr>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project4.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project4.description"
-										></td>
-									</tr>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project5.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project5.description"
-										></td>
-									</tr>
-									<tr
-										class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-									>
-										<th
-											scope="row"
-											class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-											data-i18n="professional.content.solvee.projects.project6.name"
-										></th>
-										<td
-											class="px-6 py-4"
-											data-i18n="professional.content.solvee.projects.project6.description"
-										></td>
-									</tr>
-								</tbody>
-							</table>
+							<span data-i18n="tech.angular"></span>
 						</div>
 						<div
-							class="flex mt-2 flex-wrap justify-center md:justify-start"
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
 						>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.react"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.reactNative"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.html"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.sass"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.materialUi"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.webrtc"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.bootstrap"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.styledComponents"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.webpack"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2 mr-2"
-							>
-								<span data-i18n="tech.babel"></span>
-							</div>
-							<div
-								class="flex px-2 p-0.5 rounded-lg border-teal-700 border-2"
-							>
-								<span data-i18n="tech.recharts"></span>
-							</div>
+							<span data-i18n="tech.html"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.sass"></span>
 						</div>
 					</div>
 				</div>
+				<hr class="col-span-1 md:col-span-3 my-8" />
+				<div class="col-span-1 font-caveat">
+					<h1
+						class="text-2xl text-primary font-bold"
+						data-i18n="professional.content.remedizer.position"
+					></h1>
+					<h2
+						class="text-xl my-1"
+						data-i18n="professional.companyName.remedizer"
+					></h2>
+					<p
+						class="text-xl"
+						data-i18n="professional.content.remedizer.date"
+					></p>
+				</div>
+				<div class="col-span-1 md:col-span-2 text-center">
+					<p
+						class="text-lg justify-center md:text-justify"
+						data-i18n="professional.content.remedizer.description"
+					></p>
+					<div
+						class="flex mt-2 justify-center md:justify-start font-caveat"
+					>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.react"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.html"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.sass"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.materialUi"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.recharts"></span>
+						</div>
+					</div>
+				</div>
+				<hr class="col-span-1 md:col-span-3 my-8" />
+				<div class="col-span-1 font-caveat">
+					<h1
+						class="text-2xl text-primary"
+						data-i18n="professional.content.solvee.position"
+					></h1>
+					<h2
+						class="text-xl my-1"
+						data-i18n="professional.companyName.solvee"
+					></h2>
+					<p
+						class="text-xl"
+						data-i18n="professional.content.solvee.date"
+					></p>
+				</div>
+				<div class="col-span-1 md:col-span-2 text-center">
+					<p
+						class="text-lg justify-center md:justify-start"
+						data-i18n="professional.content.solvee.description"
+					></p>
+					<div
+						class="relative overflow-x-auto rounded-2xl mx-auto flex justify-center mt-8"
+					>
+						<table
+							class="w-full text-sm text-left rtl:text-right text-white"
+						>
+							<thead
+								class="text-xs text-white uppercase bg-cyan-800"
+							>
+								<tr>
+									<th
+										scope="col"
+										class="px-6 py-3"
+										data-i18n="professional.content.solvee.projects.project"
+									></th>
+									<th
+										scope="col"
+										class="px-6 py-3"
+										data-i18n="professional.content.solvee.projects.description"
+									></th>
+								</tr>
+							</thead>
+							<tbody class="text-black bg-cyan-50">
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project1.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project1.description"
+									></td>
+								</tr>
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project2.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project2.description"
+									></td>
+								</tr>
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project3.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project3.description"
+									></td>
+								</tr>
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project4.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project4.description"
+									></td>
+								</tr>
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project5.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project5.description"
+									></td>
+								</tr>
+								<tr class="border-b">
+									<th
+										scope="row"
+										class="px-6 py-4 font-medium whitespace-nowrap"
+										data-i18n="professional.content.solvee.projects.project6.name"
+									></th>
+									<td
+										class="px-6 py-4"
+										data-i18n="professional.content.solvee.projects.project6.description"
+									></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div
+						class="flex mt-2 flex-wrap justify-center md:justify-start font-caveat"
+					>
+						<span class="m-2">Main used techs: </span>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.react"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.reactNative"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.typescript"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.html"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.sass"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.materialUi"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.webrtc"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.bootstrap"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.styledComponents"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.webpack"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.babel"></span>
+						</div>
+						<div
+							class="flex px-2 p-0.5 rounded-lg border-cyan-800 border-2 m-2"
+						>
+							<span data-i18n="tech.recharts"></span>
+						</div>
+					</div>
+				</div>
+
 				<!--				<div>-->
 				<!--					<div class="flex justify-center content-center">-->
 				<!--						<div-->
@@ -825,134 +834,134 @@
 				<!--				</div>-->
 			</div>
 		</section>
-		<section class="gap-4 flex mt-40" id="personal">
-			<div
-				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-			>
-				<a href="#" target="_blank">
-					<img
-						class="rounded-t-lg h-80 object-cover"
-						src="./images/jumbo-1.svg"
-						alt=""
-					/>
-				</a>
-				<div class="p-5">
-					<a href="#">
-						<h5
-							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+		<!--		<section class="gap-4 flex mt-40" id="personal">-->
+		<!--			<div-->
+		<!--				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"-->
+		<!--			>-->
+		<!--				<a href="#" target="_blank">-->
+		<!--					<img-->
+		<!--						class="rounded-t-lg h-80 object-cover"-->
+		<!--						src="./images/jumbo-1.svg"-->
+		<!--						alt=""-->
+		<!--					/>-->
+		<!--				</a>-->
+		<!--				<div class="p-5">-->
+		<!--					<a href="#">-->
+		<!--						<h5-->
+		<!--							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"-->
+		<!--						>-->
+		<!--							Noteworthy technology acquisitions 2021-->
+		<!--						</h5>-->
+		<!--					</a>-->
+		<!--					<p-->
+		<!--						class="mb-3 font-normal text-gray-700 dark:text-gray-400"-->
+		<!--					>-->
+		<!--						Here are the biggest enterprise technology acquisitions-->
+		<!--						of 2021 so far, in reverse chronological order.-->
+		<!--					</p>-->
+		<!--					<a-->
+		<!--						href="#"-->
+		<!--						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"-->
+		<!--					>-->
+		<!--						Read more-->
+		<!--						<svg-->
+		<!--							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"-->
+		<!--							aria-hidden="true"-->
+		<!--							xmlns="http://www.w3.org/2000/svg"-->
+		<!--							fill="none"-->
+		<!--							viewBox="0 0 14 10"-->
+		<!--						>-->
+		<!--							<path-->
+		<!--								stroke="currentColor"-->
+		<!--								stroke-linecap="round"-->
+		<!--								stroke-linejoin="round"-->
+		<!--								stroke-width="2"-->
+		<!--								d="M1 5h12m0 0L9 1m4 4L9 9"-->
+		<!--							/>-->
+		<!--						</svg>-->
+		<!--					</a>-->
+		<!--				</div>-->
+		<!--			</div>-->
+
+		<!--			<div-->
+		<!--				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"-->
+		<!--			>-->
+		<!--				<img-->
+		<!--					class="rounded-t-lg h-80 object-cover"-->
+		<!--					src="./images/jumbo-2.svg"-->
+		<!--					alt=""-->
+		<!--				/>-->
+		<!--				<div class="p-5">-->
+		<!--					<a href="#">-->
+		<!--						<h5-->
+		<!--							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"-->
+		<!--						>-->
+		<!--							Noteworthy technology acquisitions 2021-->
+		<!--						</h5>-->
+		<!--					</a>-->
+		<!--					<p-->
+		<!--						class="mb-3 font-normal text-gray-700 dark:text-gray-400"-->
+		<!--					>-->
+		<!--						Here are the biggest enterprise technology acquisitions-->
+		<!--						of 2021 so far, in reverse chronological order.-->
+		<!--					</p>-->
+		<!--					<a-->
+		<!--						href="#"-->
+		<!--						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"-->
+		<!--					>-->
+		<!--						Read more-->
+		<!--						<svg-->
+		<!--							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"-->
+		<!--							aria-hidden="true"-->
+		<!--							xmlns="http://www.w3.org/2000/svg"-->
+		<!--							fill="none"-->
+		<!--							viewBox="0 0 14 10"-->
+		<!--						>-->
+		<!--							<path-->
+		<!--								stroke="currentColor"-->
+		<!--								stroke-linecap="round"-->
+		<!--								stroke-linejoin="round"-->
+		<!--								stroke-width="2"-->
+		<!--								d="M1 5h12m0 0L9 1m4 4L9 9"-->
+		<!--							/>-->
+		<!--						</svg>-->
+		<!--					</a>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</section>-->
+
+		<footer class="bg-cyan-800">
+			<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+				<div class="sm:flex sm:items-center sm:justify-between">
+					<span class="text-sm text-white sm:text-center"
+						>© 2024 Maciej Duda
+					</span>
+					<div class="flex mt-4 sm:justify-center sm:mt-0">
+						<a
+							href="https://github.com/maciejduda1"
+							class="hover:scale-110 ms-5"
+							target="_blank"
 						>
-							Noteworthy technology acquisitions 2021
-						</h5>
-					</a>
-					<p
-						class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-					>
-						Here are the biggest enterprise technology acquisitions
-						of 2021 so far, in reverse chronological order.
-					</p>
-					<a
-						href="#"
-						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-					>
-						Read more
-						<svg
-							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 14 10"
-						>
-							<path
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M1 5h12m0 0L9 1m4 4L9 9"
+							<img
+								class="w-4 h-4"
+								src="images/logos/github-logo.svg"
+								alt="Github logo"
 							/>
-						</svg>
-					</a>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/maciej-duda-5608b3b1/"
+							target="_blank"
+							class="hover:scale-110 ms-5"
+						>
+							<img
+								class="w-4 h-4"
+								src="images/logos/linkedin-logo.svg"
+								alt="Linkedin logo"
+							/>
+						</a>
+					</div>
 				</div>
 			</div>
-
-			<div
-				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-			>
-				<img
-					class="rounded-t-lg h-80 object-cover"
-					src="./images/jumbo-2.svg"
-					alt=""
-				/>
-				<div class="p-5">
-					<a href="#">
-						<h5
-							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-						>
-							Noteworthy technology acquisitions 2021
-						</h5>
-					</a>
-					<p
-						class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-					>
-						Here are the biggest enterprise technology acquisitions
-						of 2021 so far, in reverse chronological order.
-					</p>
-					<a
-						href="#"
-						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-					>
-						Read more
-						<svg
-							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 14 10"
-						>
-							<path
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M1 5h12m0 0L9 1m4 4L9 9"
-							/>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section id="contact">CONTACT</section>
-		<footer
-			class="p-4 bg-gradient-to-t from-emerald-500 from-0% via-white via-15% to-white flex-grow"
-		>
-			<h4 class="text-center">
-				Created by
-				<a href="mailto:maciej.duda1@gazeta.pl" class="text-primary"
-					>Maciej Duda</a
-				>
-				@2024
-			</h4>
-
-			<!--			<a href="https://github.com/maciejduda1" title="poland icons">-->
-			<!--				<img-->
-			<!--					class="tooltip-icon aspect-square w-8 mr-2"-->
-			<!--					src="./images/logos/github-icon-2.svg"-->
-			<!--				/>-->
-			<!--			</a>-->
-
-			<!--			<p class="text-center" data-i18n="footer">-->
-			<!--				<a-->
-			<!--					href="https://www.flaticon.com/free-icons/poland"-->
-			<!--					title="poland icons"-->
-			<!--				>-->
-			<!--					Poland icons created by Freepik - Flaticon-->
-			<!--				</a>-->
-			<!--				<a-->
-			<!--					href="https://www.flaticon.com/free-icons/uk-flag"-->
-			<!--					title="uk flag icons"-->
-			<!--				>-->
-			<!--					Uk flag icons created by Freepik - Flaticon-->
-			<!--				</a>-->
-			<!--			</p>-->
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 	</body>
