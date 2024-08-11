@@ -94,6 +94,12 @@
 			 }
 		 }
 	 },
+	 "contact": {
+		 "title": "Skontaktuj się ze mną przez email:",
+		 "emailAddress": "maciej.duda1@gazeta.pl",
+		 "phone": "Numer telefonu:",
+		 "phoneNumber": "(+48) 504 713 604"
+	 },
 	 "tech": {
 		 "react": "React",
 		 "reactNative": "React Native",

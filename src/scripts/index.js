@@ -32,6 +32,7 @@ function localizeText() {
 	localize("#about");
 	localize("#professional");
 	localize("#personal");
+	localize("#contact");
 }
 
 const button = document.querySelector("#lang");

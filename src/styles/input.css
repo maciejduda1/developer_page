@@ -14,6 +14,7 @@ body {
     .bg-primary {
         background-color: rgb(9,121,112);
     }
+    --image-show-time: 1000ms;
 }
 
 .tooltip-icon {
@@ -27,4 +28,136 @@ body {
 
 .tooltip-icon:hover .tooltip-text {
     @apply visible z-50 bottom-8;
+}
+
+.pc-jumbo-image {
+    animation: pc-logo-switch var(--image-show-time) linear 1;
+    animation-fill-mode: forwards;
+}
+
+.phone-jumbo-image {
+    animation: phone-logo-switch var(--image-show-time) linear 1;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.react-text {
+   animation: react-text-animation 2s linear 1;
+   animation-fill-mode: forwards;
+}
+
+.react-native-text {
+    animation: react-native-text-animation 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.and-text {
+    animation: and-animation 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes react-text-animation {
+    0% {
+        opacity: 1;
+        transform: translateX(-150px);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes react-native-text-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        left: 50px;
+    }
+    100% {
+        left:0;
+        opacity: 1;
+    }
+}
+
+@keyframes pc-logo-switch {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes phone-logo-switch {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    87.5% {
+        right: -200px;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(20deg);
+        right: -200px;
+    }
+}
+
+@keyframes and-animation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    @keyframes phone-logo-switch {
+        0% {
+            opacity: 0;
+            right: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        87.5% {
+            right: -22px;
+            transform: rotateZ(0deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotateZ(20deg);
+            right: -22px;
+        }
+    }
 }

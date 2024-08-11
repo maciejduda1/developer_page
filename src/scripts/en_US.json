@@ -11,7 +11,6 @@
 		"pl": "Polish"
 	},
 	"jumbo": {
-		"title": "Maciej Duda React/React Native developer",
 		"skills": "Passion, skills and hard work",
 		"description": "Welcome. If you want to know me better check my projects and skills"
 	},
@@ -77,6 +76,12 @@
 	},
 	"personal": {
 		"title": "Personal projects"
+	},
+	"contact": {
+		"title": "Contact me by email:",
+		"emailAddress": "maciej.duda1@gazeta.pl",
+		"phone": "Phone number:",
+		"phoneNumber": "(+48) 504 713 604"
 	},
 	"tech": {
 		"react": "React",

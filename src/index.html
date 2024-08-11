@@ -21,16 +21,6 @@
 					<div
 						class="flex items-center space-x-3 rtl:space-x-reverse"
 					>
-						<!--						<img-->
-						<!--							src="./images/logos/react-logo.svg"-->
-						<!--							class="h-8"-->
-						<!--							alt="React Logo"-->
-						<!--						/>-->
-						<!--						<img-->
-						<!--							src="./images/logos/react-native-logo.svg"-->
-						<!--							class="h-8"-->
-						<!--							alt="React Native Logo"-->
-						<!--						/>-->
 						<span
 							class="self-center text-2xl font-semibold whitespace-nowrap text-white"
 							>Maciej Duda</span
@@ -154,7 +144,7 @@
 							<!--							</li>-->
 							<li>
 								<a
-									href="#"
+									href="#contact"
 									class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:scale-110 md:p-0 text-white md:hover:bg-transparent"
 									data-i18n="nav.contact"
 								></a>
@@ -164,52 +154,68 @@
 				</div>
 			</nav>
 		</header>
-		<section id="home" class="container mx-auto my-40">
+		<section id="home" class="container mx-auto my-16 md:my-40">
 			<div
 				class="grid grid-cols-1 md:grid-cols-2 gap-2 h-80 justify-center font-caveat"
 			>
 				<div class="jumbo flex flex-col justify-center items-center">
-					<h1 class="text-4xl mb-2" data-i18n="jumbo.title"></h1>
+					<h1 class="text-4xl mb-2">Maciej Duda</h1>
+					<div class="flex relative overflow-hidden">
+						<span class="react-text text-2xl mr-2">React</span>
+						<span class="and-text text-2xl">and</span>
+						<span class="react-native-text text-2xl mx-2"
+							>React Native</span
+						>
+						<span class="and-text text-2xl">Developer</span>
+					</div>
 					<h2
 						class="text-2xl text-primary mb-4"
 						data-i18n="jumbo.skills"
 					></h2>
-					<p class="text-lg" data-i18n="jumbo.description"></p>
+					<p
+						class="text-lg text-center"
+						data-i18n="jumbo.description"
+					></p>
 				</div>
-				<div class="relative flex justify-center content-center">
-					<img
-						alt="phone image"
-						class="absolute left-5 aspect-square h-80"
-						src="./images/jumbo.svg"
-					/>
-					<img
-						class="aspect-square w-8 absolute top-12 left-8"
-						src="./images/logos/react-logo.svg"
-						alt="React logo"
-					/>
-					<img
-						class="aspect-square w-8 absolute top-20 left-8"
-						src="./images/logos/sass-logo.svg"
-						alt="Sass logo"
-					/>
-					<img
-						class="aspect-square w-8 absolute top-32 left-8"
-						src="./images/logos/html-logo.svg"
-						alt="HTML logo"
-					/>
-					<img
-						class="aspect-square w-8 absolute top-44 left-8"
-						src="./images/logos/typescript-logo.svg"
-						alt="Typescript logo"
-					/>
-					<div class="absolute top-0 right-5 h-80">
+				<div class="relative flex justify-center content-center w-80">
+					<div class="pc-jumbo-image absolute">
 						<img
 							alt="phone image"
-							class="aspect-square h-80"
+							class="aspect-square h-40 md:h-80"
+							src="./images/jumbo.svg"
+						/>
+
+						<img
+							class="aspect-square w-4 md:w-8 absolute top-8 md:top-12 left-2 md:left-8"
+							src="./images/logos/react-logo.svg"
+							alt="React logo"
+						/>
+						<img
+							class="aspect-square w-4 md:w-8 absolute top-12 md:top-20 left-2 md:left-8"
+							src="./images/logos/sass-logo.svg"
+							alt="Sass logo"
+						/>
+						<img
+							class="aspect-square w-4 md:w-8 absolute top-16 md:top-32 left-2 md:left-8"
+							src="./images/logos/html-logo.svg"
+							alt="HTML logo"
+						/>
+						<img
+							class="aspect-square w-4 md:w-8 absolute top-20 md:top-44 left-2 md:left-8"
+							src="./images/logos/typescript-logo.svg"
+							alt="Typescript logo"
+						/>
+					</div>
+					<div
+						class="absolute top-0 right-0 h-40 md:h-80 phone-jumbo-image"
+					>
+						<img
+							alt="phone image"
+							class="aspect-square h-40 md:h-80"
 							src="./images/nexus5.svg"
 						/>
 						<img
-							class="aspect-square h-20 absolute top-32 right-[120px]"
+							class="aspect-square h-16 md:h-20 absolute top-10 md:top-32 right-[50px] md:right-[120px]"
 							src="./images/logos/react-native-logo.svg"
 							alt="React Native logo"
 						/>
@@ -217,13 +223,13 @@
 				</div>
 			</div>
 		</section>
-		<section id="about" class="py-20 container mx-auto">
+		<section id="about" class="py-10 md:py-20 container mx-auto">
 			<div class="flex flex-col justify-center items-center mt-8">
 				<div
 					class="flex justify-between items-center gap-4 flex-col md:flex-row"
 				>
 					<img
-						class="rounded-full w-40 broder border-2 border-cyan-800"
+						class="rounded-full w-40 broder"
 						src="images/photo.jpg"
 						alt="Profile photo in painting style"
 					/>
@@ -433,7 +439,7 @@
 									</span>
 								</div>
 								<div
-									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center"
+									class="flex px-2 py-1 border rounded-2xl shadow shadow-cyan-100 justify-center items-center mr-2"
 								>
 									<img
 										alt="node.js logo"
@@ -549,15 +555,15 @@
 			>
 				<div class="col-span-1 font-caveat">
 					<h1
-						class="text-2xl text-primary font-bold"
+						class="text-2xl text-primary font-bold text-center md:text-start"
 						data-i18n="professional.content.autorun.position"
 					></h1>
 					<h2
-						class="text-xl my-1"
+						class="text-xl my-1 text-center md:text-start"
 						data-i18n="professional.companyName.autorun"
 					></h2>
 					<p
-						class="text-xl"
+						class="text-xl text-center md:text-start"
 						data-i18n="professional.content.autorun.date"
 					></p>
 				</div>
@@ -589,15 +595,15 @@
 				<hr class="col-span-1 md:col-span-3 my-8" />
 				<div class="col-span-1 font-caveat">
 					<h1
-						class="text-2xl text-primary font-bold"
+						class="text-2xl text-primary font-bold text-center md:text-start"
 						data-i18n="professional.content.remedizer.position"
 					></h1>
 					<h2
-						class="text-xl my-1"
+						class="text-xl my-1 text-center md:text-start"
 						data-i18n="professional.companyName.remedizer"
 					></h2>
 					<p
-						class="text-xl"
+						class="text-xl text-center md:text-start"
 						data-i18n="professional.content.remedizer.date"
 					></p>
 				</div>
@@ -639,15 +645,15 @@
 				<hr class="col-span-1 md:col-span-3 my-8" />
 				<div class="col-span-1 font-caveat">
 					<h1
-						class="text-2xl text-primary"
+						class="text-2xl text-primary text-center md:text-start"
 						data-i18n="professional.content.solvee.position"
 					></h1>
 					<h2
-						class="text-xl my-1"
+						class="text-xl my-1 text-center md:text-start"
 						data-i18n="professional.companyName.solvee"
 					></h2>
 					<p
-						class="text-xl"
+						class="text-xl text-center md:text-start"
 						data-i18n="professional.content.solvee.date"
 					></p>
 				</div>
@@ -682,7 +688,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project1.name"
 									></th>
 									<td
@@ -693,7 +699,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project2.name"
 									></th>
 									<td
@@ -704,7 +710,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project3.name"
 									></th>
 									<td
@@ -715,7 +721,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project4.name"
 									></th>
 									<td
@@ -726,7 +732,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project5.name"
 									></th>
 									<td
@@ -737,7 +743,7 @@
 								<tr class="border-b">
 									<th
 										scope="row"
-										class="px-6 py-4 font-medium whitespace-nowrap"
+										class="px-6 py-4 font-medium"
 										data-i18n="professional.content.solvee.projects.project6.name"
 									></th>
 									<td
@@ -834,105 +840,34 @@
 				<!--				</div>-->
 			</div>
 		</section>
-		<!--		<section class="gap-4 flex mt-40" id="personal">-->
-		<!--			<div-->
-		<!--				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"-->
-		<!--			>-->
-		<!--				<a href="#" target="_blank">-->
-		<!--					<img-->
-		<!--						class="rounded-t-lg h-80 object-cover"-->
-		<!--						src="./images/jumbo-1.svg"-->
-		<!--						alt=""-->
-		<!--					/>-->
-		<!--				</a>-->
-		<!--				<div class="p-5">-->
-		<!--					<a href="#">-->
-		<!--						<h5-->
-		<!--							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"-->
-		<!--						>-->
-		<!--							Noteworthy technology acquisitions 2021-->
-		<!--						</h5>-->
-		<!--					</a>-->
-		<!--					<p-->
-		<!--						class="mb-3 font-normal text-gray-700 dark:text-gray-400"-->
-		<!--					>-->
-		<!--						Here are the biggest enterprise technology acquisitions-->
-		<!--						of 2021 so far, in reverse chronological order.-->
-		<!--					</p>-->
-		<!--					<a-->
-		<!--						href="#"-->
-		<!--						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"-->
-		<!--					>-->
-		<!--						Read more-->
-		<!--						<svg-->
-		<!--							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"-->
-		<!--							aria-hidden="true"-->
-		<!--							xmlns="http://www.w3.org/2000/svg"-->
-		<!--							fill="none"-->
-		<!--							viewBox="0 0 14 10"-->
-		<!--						>-->
-		<!--							<path-->
-		<!--								stroke="currentColor"-->
-		<!--								stroke-linecap="round"-->
-		<!--								stroke-linejoin="round"-->
-		<!--								stroke-width="2"-->
-		<!--								d="M1 5h12m0 0L9 1m4 4L9 9"-->
-		<!--							/>-->
-		<!--						</svg>-->
-		<!--					</a>-->
-		<!--				</div>-->
-		<!--			</div>-->
-
-		<!--			<div-->
-		<!--				class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"-->
-		<!--			>-->
-		<!--				<img-->
-		<!--					class="rounded-t-lg h-80 object-cover"-->
-		<!--					src="./images/jumbo-2.svg"-->
-		<!--					alt=""-->
-		<!--				/>-->
-		<!--				<div class="p-5">-->
-		<!--					<a href="#">-->
-		<!--						<h5-->
-		<!--							class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"-->
-		<!--						>-->
-		<!--							Noteworthy technology acquisitions 2021-->
-		<!--						</h5>-->
-		<!--					</a>-->
-		<!--					<p-->
-		<!--						class="mb-3 font-normal text-gray-700 dark:text-gray-400"-->
-		<!--					>-->
-		<!--						Here are the biggest enterprise technology acquisitions-->
-		<!--						of 2021 so far, in reverse chronological order.-->
-		<!--					</p>-->
-		<!--					<a-->
-		<!--						href="#"-->
-		<!--						class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"-->
-		<!--					>-->
-		<!--						Read more-->
-		<!--						<svg-->
-		<!--							class="rtl:rotate-180 w-3.5 h-3.5 ms-2"-->
-		<!--							aria-hidden="true"-->
-		<!--							xmlns="http://www.w3.org/2000/svg"-->
-		<!--							fill="none"-->
-		<!--							viewBox="0 0 14 10"-->
-		<!--						>-->
-		<!--							<path-->
-		<!--								stroke="currentColor"-->
-		<!--								stroke-linecap="round"-->
-		<!--								stroke-linejoin="round"-->
-		<!--								stroke-width="2"-->
-		<!--								d="M1 5h12m0 0L9 1m4 4L9 9"-->
-		<!--							/>-->
-		<!--						</svg>-->
-		<!--					</a>-->
-		<!--				</div>-->
-		<!--			</div>-->
-		<!--		</section>-->
-
+		<section
+			id="contact"
+			class="py-16 md:py-20 my-16 md:my-20 container mx-auto flex justify-center items-center text-black flex-col"
+		>
+			<div class="flex -rotate-12">
+				<h1
+					class="text-xl md:text-3xl text-center font-bold font-caveat mr-2"
+					data-i18n="contact.title"
+				></h1>
+				<h1
+					class="text-xl md:text-3xl text-center font-bold font-caveat text-cyan-800"
+					data-i18n="contact.emailAddress"
+				></h1>
+			</div>
+			<div class="flex -rotate-12 mt-4">
+				<h1
+					class="text-xl md:text-3xl text-center font-bold font-caveat skew-x-2 mr-2"
+					data-i18n="contact.phone"
+				></h1>
+				<h1
+					class="text-xl md:text-3xl text-center font-bold font-caveat skew-x-2 text-cyan-800"
+					data-i18n="contact.phoneNumber"
+				></h1>
+			</div>
+		</section>
 		<footer class="bg-cyan-800">
 			<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-				<div class="sm:flex sm:items-center sm:justify-between">
+				<div class="flex items-center justify-between">
 					<span class="text-sm text-white sm:text-center"
 						>© 2024 Maciej Duda
 					</span>
