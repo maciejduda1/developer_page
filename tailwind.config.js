@@ -14,6 +14,7 @@ module.exports = {
 				accent: "#535C91",
 			},
 			backgroundImage: {
+				jumbotron: "url('~/images/jumbo2.jpg')",
 				"hero-phone": "url('~/images/nexus5.svg')",
 				"hero-pc": "url('~/images/monitor.svg')",
 				"country-eng": "url('~/images/united-kingdom-flag.svg')",

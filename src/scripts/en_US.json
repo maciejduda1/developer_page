@@ -110,5 +110,11 @@
 		"reanimated": "Reanimated",
 		"firebase": "Firebase",
 		"stripe": "Stripe"
+	},
+	"general": {
+		"author": "Maciej Duda",
+		"year": "2024",
+		"allRightsReserved": "All rights reserved",
+		"mainUsedTechs": "Main technologies used in projects:"
 	}
 }
