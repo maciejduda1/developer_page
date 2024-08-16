@@ -3,14 +3,16 @@
 		"home": "Home",
 		"about": "About",
 		"contact": "Contact",
-		"personal": "Personal projects",
-		"professional": "Professional projects"
+		"personal": "Projects",
+		"professional": "Career"
 	},
 	"lang": {
 		"en": "English",
 		"pl": "Polish"
 	},
 	"jumbo": {
+		"hello": "Hello, I'm Maciej Duda",
+		"title": "React and React Native Developer",
 		"and": "and",
 		"skills": "Passion, skills and hard work",
 		"description": "Welcome. If you want to know me better check my projects and skills"

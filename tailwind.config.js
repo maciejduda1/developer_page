@@ -14,6 +14,7 @@ module.exports = {
 				accent: "#535C91",
 			},
 			backgroundImage: {
+				jumbo: `radial-gradient(circle, rgba(5,76,93,0.9836135137648809) 5%, rgba(21,128,145,1) 49%, rgba(0,0,0,1) 100%)`,
 				jumbotron: "url('~/images/jumbo2.jpg')",
 				"hero-phone": "url('~/images/nexus5.svg')",
 				"hero-pc": "url('~/images/monitor.svg')",

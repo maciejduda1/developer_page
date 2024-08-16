@@ -18,6 +18,10 @@ body {
     --image-show-time: 1000ms;
 }
 
+/*#home {*/
+/*    clip-path: circle(92.2% at 25% 33%);*/
+/*}*/
+
 .tooltip-icon {
     position: relative;
     cursor: pointer;
@@ -34,6 +38,7 @@ body {
 .pc-jumbo-image {
     animation: pc-logo-switch var(--image-show-time) linear 1;
     animation-fill-mode: forwards;
+
 }
 
 .phone-jumbo-image {

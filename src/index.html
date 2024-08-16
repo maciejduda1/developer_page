@@ -10,8 +10,8 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="flex flex-col bg-white font-montserrat">
-		<header class="mb-8 p-4 font-lora">
+	<body class="flex flex-col bg-white font-lora">
+		<header class="mb-8 p-4">
 			<nav
 				class="bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200"
 			>
@@ -140,18 +140,19 @@
 				</div>
 			</nav>
 		</header>
-		<section
-			id="home"
-			class="py-16 md:py-40 h-screen bg-cover bg-no-repeat bg-center bg-gradient-to-l from-slate-200 via-slate-100 to-current"
-		>
+		<section id="home" class="py-16 md:py-40 h-screen">
 			<div
-				class="container grid grid-cols-1 lg:grid-cols-2 gap-2 h-80 justify-center font-caveat mx-auto"
+				class="container grid grid-cols-1 lg:grid-cols-2 gap-2 h-96 justify-center mx-auto"
 			>
 				<div
-					class="mx-8 jumbo flex flex-col justify-center items-center border border-black rounded-xl shadow shadow-black bg-white"
+					class="mx-8 jumbo flex flex-col justify-center items-center lg:items-start md:text-nowrap uppercase"
 				>
+					<h1
+						class="text-xl lg:text-3xl xl:text-4xl"
+						data-i18n="jumbo.hello"
+					></h1>
 					<div
-						class="flex relative overflow-hidden text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+						class="flex relative lg:text-2xl xl:text-3xl font-bold overflow-hidden"
 					>
 						<span class="react-text mr-2">React</span>
 						<span class="and-text" data-i18n="jumbo.and"></span>
@@ -159,19 +160,20 @@
 						<span class="and-text">Developer</span>
 					</div>
 					<h2
-						class="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-primary mb-2"
+						class="text-lg md:text-xl text-indigo-900 mb-2"
 						data-i18n="jumbo.skills"
 					></h2>
-					<p
-						class="text-lg md:text-xl lg:text-2xl xl:text-3xl text-center font-lora mx-10"
-						data-i18n="jumbo.description"
-					></p>
+					<!--					<p-->
+					<!--						class="text-lg md:text-xl lg:text-2xl xl:text-3xl text-center font-lora mx-10"-->
+					<!--						data-i18n="jumbo.description"-->
+					<!--					></p>-->
 				</div>
-				<div class="mx-auto lg:mx-0">
-					<div
-						class="relative flex justify-center content-center w-80"
-					>
-						<div class="pc-jumbo-image absolute">
+				<div class="mx-auto lg:mx-0 flex justify-center content-center">
+					<div class="relative w-80 aspect-square">
+						<div
+							class="h-40 md:h-[400px] aspect-square rounded-full absolute lg:-left-5 lg:bottom-5 bg-gradient-to-bl from-red-500 from-0% via-purple-700 to-indigo-500"
+						></div>
+						<div class="pc-jumbo-image absolute bg-transparent">
 							<img
 								alt="pc image"
 								class="aspect-square h-40 md:h-80"
